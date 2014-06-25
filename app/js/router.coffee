@@ -1,18 +1,18 @@
-angular.module("app").config ($routeProvider, $locationProvider) ->
+angular.module("app").config ($stateProvider, $urlRouterProvider) ->
 
-  $locationProvider.html5Mode true
-
-  $routeProvider.when "/login",
+  $stateProvider.state "login",
+    url: "/login"
     templateUrl: "login.html"
     controller: "LoginController"
 
-  $routeProvider.when "/home",
+  $stateProvider.state "home",
+    url: "/home"
     templateUrl: "home.html"
     controller: "HomeController"
 
-  $routeProvider.when "/list-of-books",
+  $stateProvider.state "list-of-books",
+    url: "/list-of-books"
     templateUrl: "books.html"
     controller: "BooksController"
 
-  $routeProvider.otherwise redirectTo: "/login"
-  return
+  $urlRouterProvider.otherwise "/login"

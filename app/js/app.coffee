@@ -1,6 +1,7 @@
 angular.module("app", [
   "ngResource"
-  "ngRoute"
+  "ui.router"
+  "ui.router.state"
 ]).run ($rootScope) ->
 
   # adds some basic utilities to the $rootScope for debugging purposes

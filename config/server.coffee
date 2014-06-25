@@ -14,11 +14,9 @@
 module.exports = drawRoutes: (app) ->
   app.post "/login", (req, res) ->
     res.json message: "logging in!"
-    return
 
   app.post "/logout", (req, res) ->
     res.json message: "logging out!"
-    return
 
   app.get "/books", (req, res) ->
     res.json [
@@ -35,6 +33,3 @@ module.exports = drawRoutes: (app) ->
         author: "Stephenson"
       }
     ]
-    return
-
-  return
