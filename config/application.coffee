@@ -44,8 +44,7 @@ module.exports = (lineman) ->
 # Lineman supports Sass via grunt-contrib-sass, which requires you first
 # have Ruby installed as well as the `sass` gem. To enable it, comment out the
 # following line:
-#
-# enableSass: true
+  enableSass: true
 
 # Asset Fingerprints
 #
@@ -54,8 +53,6 @@ module.exports = (lineman) ->
 # via grunt-asset-fingerprint
 #
 # enableAssetFingerprint: true
-
-module.exports = (lineman) ->
   concat_sourcemap:
     js:
       src: [

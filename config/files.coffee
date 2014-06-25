@@ -18,6 +18,9 @@ module.exports = (lineman) ->
       "app/js/**/*.js"
     ]
 
+  sass:
+    main:"app/css/main.{sass,scss}"
+
   less:
     compile:
       options:
