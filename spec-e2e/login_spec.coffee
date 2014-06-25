@@ -1,5 +1,4 @@
 protractor = require("protractor")
-require "protractor/jasminewd"
 require 'jasmine-given'
 
 describe "my angular app", ->
@@ -13,7 +12,3 @@ describe "my angular app", ->
       When -> ptor.findElement(protractor.By.id("log-in")).click()
       Then -> ptor.findElement(protractor.By.binding("{{ message }}")).getText().then (text) ->
           expect(text).toEqual "Mouse Over these images to see a directive at work"
-
-
-
-
