@@ -46,6 +46,8 @@ module.exports = (lineman) ->
 # following line:
   enableSass: true
 
+  livereload: true
+
 # Asset Fingerprints
 #
 # Lineman can fingerprint your static assets by appending a hash to the filename

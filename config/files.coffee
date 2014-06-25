@@ -30,7 +30,8 @@ module.exports = (lineman) ->
   css:
     vendor: [
       "vendor/bower/bootstrap-sass/dist/css/bootstrap.css",
-      "vendor/bower/bootstrap-sass/dist/css/bootstrap-theme.css"]
+      "vendor/bower/bootstrap-sass/dist/css/bootstrap-theme.css",
+      "vendor/bower/font-awesome/css/font-awesome.css"]
     app: "app/css/**/*.css"
     concatenated: "generated/css/app.css"
     minified: "dist/css/app.css"
