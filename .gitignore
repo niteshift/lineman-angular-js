@@ -5,3 +5,4 @@
 /vendor/bower
 /dist
 /generated
+/.sass-cache

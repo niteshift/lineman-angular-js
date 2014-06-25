@@ -10,8 +10,12 @@ module.exports = (lineman) ->
   #Override file patterns here
   js:
     vendor: [
-      "vendor/js/angular.js"
-      "vendor/js/**/*.js"
+      "vendor/bower/underscore/underscore.js"
+      "vendor/bower/jquery/dist/jquery.js"
+      "vendor/bower/bootstrap-sass/dist/js/bootstrap.js"
+      "vendor/bower/angular/angular.js"
+      "vendor/bower/angular-resource/angular-resource.js"
+      "vendor/bower/angular-route/angular-route.js"
     ]
     app: [
       "app/js/app.js"
@@ -19,13 +23,15 @@ module.exports = (lineman) ->
     ]
 
   sass:
-    main:"app/css/main.{sass,scss}"
+    main: ["app/css/main.scss","app/css/main.sass"]
+    app: ["app/css/**/*.scss", "app/css/**/*.sass"]
+    generatedApp: "generated/css/app.sass.css"
 
-  less:
-    compile:
-      options:
-        paths: [
-          "vendor/css/normalize.css"
-          "vendor/css/**/*.css"
-          "app/css/**/*.less"
-        ]
+  css:
+    vendor: [
+      "vendor/bower/bootstrap-sass/dist/css/bootstrap.css",
+      "vendor/bower/bootstrap-sass/dist/css/bootstrap-theme.css"]
+    app: "app/css/**/*.css"
+    concatenated: "generated/css/app.css"
+    minified: "dist/css/app.css"
+    minifiedWebRelative: "css/app.css"
