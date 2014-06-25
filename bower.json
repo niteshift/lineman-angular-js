@@ -1,0 +1,28 @@
+{
+  "name": "nightride-dashboard",
+  "version": "0.0.0",
+  "homepage": "https://github.com/linemanjs/lineman-angular-template",
+  "authors": [
+    "joshuarose@outlook.com <joshuarose@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/vendor/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.0.2"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0",
+    "angular": "~1.2.18",
+    "angular-resource": "~1.2.18",
+    "angular-ui-router": "~0.2.10",
+    "angular-route": "~1.2.18"
+  }
+}
