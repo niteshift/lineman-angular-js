@@ -47,6 +47,8 @@ To run the end-to-end tests:
 
 1. `npm install protractor`
 2. `./node_modules/protractor/bin/webdriver-manager update`
-3. Make sure you have chrome installed.
+3. Update config/spec-e2e.js to reflect the correct version of selenium standalone
+3. `./node_modules/protractor/bin/webdriver-manager start`
+3. `Make sure you have chrome installed.`
 4. `lineman run` from 1 terminal window
 5. `lineman grunt spec-e2e` from another terminal window
