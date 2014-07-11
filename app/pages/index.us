@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>UC Lineman Angular Setup</h1>
+          <h1>JS Lineman Angular Setup</h1>
           <div id="view" ui-view></div>
         </div>
       </div>
